@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#eec9df">
+  <meta name="description" content="Vườn hoa Love — mỗi khoảnh khắc, một điều đáng nhớ.">
+  <title>Vườn hoa Love</title>
+  <!-- Metadata tĩnh dùng cho cả /vuon.html và các link /vuon/<slug>. -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Love">
+  <meta property="og:title" content="Vườn hoa Love">
+  <meta property="og:description" content="Vườn hoa Love — mỗi khoảnh khắc, một điều đáng nhớ.">
+  <meta property="og:image" content="https://i.dlove.vn/assets/ui/dlove-gift-logo.png">
+  <meta property="og:image:secure_url" content="https://i.dlove.vn/assets/ui/dlove-gift-logo.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1254">
+  <meta property="og:image:height" content="1254">
+  <meta property="og:image:alt" content="Biểu tượng hộp quà hồng Love">
+  <meta property="og:locale" content="vi_VN">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Vườn hoa Love">
+  <meta name="twitter:description" content="Vườn hoa Love — mỗi khoảnh khắc, một điều đáng nhớ.">
+  <meta name="twitter:image" content="https://i.dlove.vn/assets/ui/dlove-gift-logo.png">
+  <meta name="twitter:image:alt" content="Biểu tượng hộp quà hồng Love">
+  <link rel="stylesheet" href="/assets/vuon-hoa/fonts/fonts.css">
+  <link rel="icon" href="/assets/ui/dlove-gift-logo.png">
+  <script src="/detect-devtools.js"></script>
+  <script type="module" crossorigin src="/assets/garden-BtN3YziN.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/codeProtection-B6aeKZvA.js">
+  <link rel="modulepreload" crossorigin href="/assets/templateConst-Bf8fV3By.js">
+  <link rel="modulepreload" crossorigin href="/assets/data-B7vB9Mqk.js">
+  <link rel="stylesheet" crossorigin href="/assets/garden-X5d9e75R.css">
+  <link rel="stylesheet" crossorigin href="/assets/dloveLogo-D8kZ4Lma.css">
+</head>
+<body>
+  <main id="garden" aria-label="Khu vườn ảnh tương tác 360 độ">
+    <canvas id="scene" tabindex="0" aria-label="Vuốt trái phải để nhìn quanh. Dùng phím mũi tên để chọn ảnh, Enter để ngắm gần."></canvas>
+    <div class="vignette" aria-hidden="true"></div>
+    <header class="topbar" id="topbar">
+      <a class="wordmark" href="#" id="home" aria-label="Về giữa khu vườn"><img class="brand-logo" data-asset="assets/brand/dlove-mark.png" width="474" height="512" alt="Biểu tượng Dlove" fetchpriority="high" draggable="false"></a>
+      <div class="top-actions">
+        <button class="photo-retry" id="retry-photos" type="button" hidden>Tải lại ảnh</button>
+        <button class="icon-button" id="sound" aria-label="Bật âm thanh" title="Bật âm thanh" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4zM17 9l5 6m0-6-5 6"/></svg></button>
+      </div>
+    </header>
+
+    <section class="welcome" id="welcome" aria-labelledby="welcome-title">
+      <div class="welcome-scene" aria-hidden="true">
+        <picture class="welcome-picture">
+          <source media="(min-width: 900px), (min-width: 700px) and (orientation: landscape)" data-asset="assets/welcome/garden-gate-desktop.jpg" width="1672" height="941">
+          <img class="welcome-landscape" data-asset="assets/welcome/garden-gate.jpg" alt="" width="887" height="1774" fetchpriority="high" draggable="false">
+        </picture>
+        <div class="welcome-fireflies"><i></i><i></i><i></i><i></i></div>
+      </div>
+      <div class="welcome-brand"><img data-asset="assets/brand/dlove-mark.png" width="474" height="512" alt="Logo Dlove" fetchpriority="high" draggable="false"></div>
+      <div class="welcome-content">
+        <div class="welcome-copy">
+          <h1 id="welcome-title">Bxaa đến rồi!</h1>
+          <p class="intro-line">Có một khu vườn nhỏ,<br>đang đợi bxaa ghé thăm.</p>
+        </div>
+        <div class="welcome-actions">
+          <button class="primary" id="enter" disabled><span id="enter-label">Đang mở những cánh hoa…</span><svg viewBox="0 0 28 28" aria-hidden="true"><path d="M4 14h20M17 7l7 7-7 7"/></svg></button>
+          <div class="load-track" id="load-track"><i id="load-bar"></i></div>
+          <p class="load-caption" id="load-caption" role="status">oxaa đang chuẩn bị khu vườn</p>
+        </div>
+      </div>
+      <div class="welcome-guide">
+        <img data-asset="assets/welcome/dlovy-guide.png" width="1254" height="1254" alt="oxaa nghiêng đầu, nhón chân và đưa tay mời bxaa vào vườn hoa" fetchpriority="high" draggable="false">
+      </div>
+      <img class="welcome-foreground" data-asset="assets/welcome/garden-foreground-desktop.png" width="2172" height="724" alt="" aria-hidden="true" loading="lazy" draggable="false">
+    </section>
+
+    <section class="explore-ui" id="explore-ui" hidden>
+      <nav class="journey-controls" hidden aria-label="Điều hướng khu vườn">
+        <button class="direction left" id="turn-left" aria-label="Nhìn sang trái">‹</button>
+        <span class="journey-position" id="journey-position" hidden aria-label="Vị trí trong hành trình">01 / 01</span>
+        <button class="direction right" id="turn-right" aria-label="Nhìn sang phải">›</button>
+        <div class="journey-track" id="journey-track" hidden aria-hidden="true"><i></i></div>
+      </nav>
+      <div class="scene-label" id="scene-label" aria-hidden="true"><i class="name-star name-star-left" aria-hidden="true"></i><i class="name-star name-star-top" aria-hidden="true"></i><i class="name-star name-star-right" aria-hidden="true"></i><span id="scene-label-text"></span><small>Chạm để xem ↗</small></div>
+      <button class="memory-launch" id="open-memory" hidden aria-haspopup="dialog" aria-controls="class-memory" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 3v18M17 3v18M3 8h4m10 0h4M3 16h4m10 0h4M7 12h10"/></svg><span>Cuộn phim ký ức</span></button>
+      <button class="letter-launch" id="open-letter" hidden aria-haspopup="dialog" aria-controls="class-letter" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/><path class="envelope-heart" d="M10 11c-2-3-4 0 2 4 6-4 4-7 2-4l-2 2z"/></svg><span>Lá thư</span><i aria-hidden="true">✧</i></button>
+      <div class="bottom-bar" id="bottom-bar" hidden>
+        <span class="swipe-hint"><svg viewBox="0 0 48 16" aria-hidden="true"><path d="M2 8h44M8 2 2 8l6 6M40 2l6 6-6 6"/></svg> Vuốt để dạo quanh <span class="hint-separator">·</span> Chạm vào một đóa hoa</span>
+        <div class="compass" id="compass" aria-label="Vị trí trong khu vườn"><span id="compass-name">Khởi đầu dịu dàng</span><div id="compass-dots"></div><span class="compass-degree" id="compass-degree">360°</span></div>
+      </div>
+    </section>
+
+    <section class="focus-ui" id="focus-ui" hidden aria-labelledby="focus-name">
+      <button class="back-button" id="back"><span aria-hidden="true">←</span> Về khu vườn</button>
+      <div class="focus-copy">
+        <p class="eyebrow" id="focus-number" hidden></p>
+        <h2 id="focus-name"></h2>
+        <p id="focus-wish"></p>
+        <button class="bouquet-launch" id="open-bouquet" aria-label="Mở bó hoa dành riêng cho bxaa" aria-haspopup="dialog" aria-controls="person-bouquet" aria-expanded="false">
+          <span class="bouquet-launch-art" aria-hidden="true"><img data-asset="assets/bouquet/letter-bouquet-sticker.png" width="322" height="384" alt="" draggable="false"></span>
+          <span class="bouquet-launch-label">Bó hoa dành riêng cho bxaa</span>
+          <span class="bouquet-launch-arrow" aria-hidden="true">↗</span>
+        </button>
+      </div>
+      <div class="focus-controls" hidden><button id="previous" class="icon-button" aria-label="Ảnh trước">←</button><span id="focus-index"></span><button id="next" class="icon-button" aria-label="Ảnh tiếp theo">→</button><span class="control-divider"></span><button id="zoom-out" class="icon-button" aria-label="Thu nhỏ">−</button><button id="zoom-in" class="icon-button" aria-label="Phóng to">+</button></div>
+    </section>
+
+    <section class="class-letter" id="class-letter" hidden role="dialog" aria-modal="true" aria-labelledby="letter-title" data-phase="sealed">
+      <div class="letter-backdrop" id="letter-backdrop" aria-hidden="true"></div>
+      <div class="letter-topline"><button class="letter-close" id="close-letter" aria-label="Đóng thư và trở lại khu vườn">×</button></div>
+      <div class="letter-scroll" id="letter-scroll">
+        <div class="letter-stationery" id="letter-stationery">
+          <div class="envelope-back" aria-hidden="true"></div>
+          <div class="envelope-flap" aria-hidden="true"><span>gửi những điều dịu dàng</span></div>
+          <article class="letter-paper" id="letter-paper" tabindex="0" aria-label="Nội dung lá thư">
+            <img loading="lazy" class="letter-art" id="letter-art" data-asset="assets/letter/letter-blank-v3.webp" width="1122" height="1402" alt="" aria-hidden="true" draggable="false">
+            <div class="letter-copy" id="letter-copy" tabindex="0" aria-label="Đọc nội dung lá thư">
+              <h2 id="letter-title"></h2>
+              <p class="letter-opening" id="letter-opening"></p>
+              <div class="letter-paragraphs" id="letter-paragraphs"></div>
+              <span class="letter-heart letter-divider" aria-hidden="true">✧ ♡ ✧</span>
+              <span class="letter-date" id="letter-date"></span>
+            </div>
+            <span class="letter-read-hint" id="letter-read-hint" hidden aria-hidden="true">Cuộn để đọc tiếp ↓</span>
+          </article>
+          <img loading="lazy" class="envelope-front" id="envelope-front" data-asset="assets/letter/envelope-front.webp" alt="Phong bì hồng trang trí nơ và hoa">
+          <div class="envelope-seal"><img loading="lazy" data-asset="assets/letter/dlove-wax-seal.png" width="1254" height="1254" alt="Dấu sáp hồng dập logo Dlove" draggable="false"></div>
+          <div class="letter-butterfly butterfly-one" aria-hidden="true"><img loading="lazy" data-asset="assets/letter/butterfly-letter-v3.webp" alt=""></div>
+          <div class="letter-sparkles" aria-hidden="true"><i>✧</i><i>✧</i><i>✦</i><i>✧</i><i>✦</i></div>
+        </div>
+        <p class="letter-bottom-note" id="letter-status" aria-live="polite">Một lá thư đang chờ bxaa…</p>
+      </div>
+    </section>
+    <section class="memory-modal" id="class-memory" hidden role="dialog" aria-modal="true" aria-labelledby="memory-title">
+      <img loading="lazy" class="memory-panorama" data-asset="assets/decor/dream-panorama.webp" alt="" aria-hidden="true">
+      <div class="memory-wash" aria-hidden="true"></div>
+      <header class="memory-head">
+        <button class="memory-close" id="close-memory" aria-label="Đóng cuộn phim và về khu vườn">←</button>
+        <span class="memory-brand">khoind</span>
+        <button class="memory-play" id="memory-play" aria-label="Tạm dừng cuộn phim" aria-pressed="true">Ⅱ</button>
+        <h2 id="memory-title">Cuộn phim kỷ niệm</h2>
+      </header>
+      <div class="memory-stage" id="memory-stage">
+        <div class="memory-viewport" id="memory-viewport" tabindex="0" role="region" aria-label="Ảnh trong cuộn phim" aria-describedby="memory-hint">
+          <div class="memory-film" id="memory-film"></div>
+        </div>
+        <canvas class="memory-film-canvas" id="memory-film-canvas" aria-hidden="true"></canvas>
+      </div>
+      <img loading="lazy" class="memory-ribbon" data-asset="assets/decor/silk-ribbon.webp" alt="" aria-hidden="true">
+      <img loading="lazy" class="memory-flowers" data-asset="assets/decor/flowers-front.webp" alt="" aria-hidden="true">
+      <p class="memory-sr-only" id="memory-hint">Vuốt hoặc dùng phím mũi tên để cuộn phim. Nút ở góc trên bên phải bật hoặc dừng tự trôi.</p>
+      <output class="memory-sr-only" id="memory-position" aria-label="Vị trí khung phim" aria-live="off">01 / 01</output>
+    </section>
+    <section class="bouquet-modal" id="person-bouquet" hidden role="dialog" aria-modal="true" aria-labelledby="bouquet-name" data-phase="closed">
+      <div class="bouquet-atmosphere" aria-hidden="true">
+        <div class="bouquet-haze"></div>
+        <div class="bouquet-bokeh"></div>
+        <img loading="lazy" class="bouquet-garden-edge" data-asset="assets/welcome/garden-foreground-desktop.png" width="2172" height="724" alt="" draggable="false">
+        <div class="bouquet-petals">
+          <i style="--x:4%;--size:15px;--sway:34px;--turn:18deg;--duration:19s;--delay:-4s"></i>
+          <i style="--x:12%;--size:10px;--sway:-23px;--turn:65deg;--duration:24s;--delay:-17s"></i>
+          <i style="--x:23%;--size:17px;--sway:40px;--turn:-24deg;--duration:22s;--delay:-10s"></i>
+          <i style="--x:8%;--size:12px;--sway:27px;--turn:110deg;--duration:27s;--delay:-22s"></i>
+          <i style="--x:31%;--size:9px;--sway:-32px;--turn:40deg;--duration:26s;--delay:-6s"></i>
+          <i style="--x:77%;--size:14px;--sway:-35px;--turn:80deg;--duration:23s;--delay:-15s"></i>
+          <i style="--x:88%;--size:18px;--sway:26px;--turn:-32deg;--duration:21s;--delay:-7s"></i>
+          <i style="--x:96%;--size:11px;--sway:-30px;--turn:15deg;--duration:28s;--delay:-23s"></i>
+          <i style="--x:83%;--size:9px;--sway:38px;--turn:95deg;--duration:25s;--delay:-2s"></i>
+          <i style="--x:68%;--size:12px;--sway:22px;--turn:-60deg;--duration:30s;--delay:-19s"></i>
+        </div>
+      </div>
+      <header class="bouquet-head">
+        <button class="bouquet-close" id="close-bouquet" aria-label="Đóng bó hoa và về ảnh đang ngắm">←</button>
+        <h2 id="bouquet-name"></h2>
+      </header>
+      <div class="bouquet-display"><div class="bouquet-stage" id="bouquet-stage" role="img" aria-label="Bó hoa dành riêng cho bxaa"></div></div>
+      <footer class="bouquet-footer">
+        <p class="bouquet-wish" id="bouquet-wish" hidden></p>
+        <p class="bouquet-status" id="bouquet-status" role="status"></p>
+      </footer>
+    </section>
+    <div class="error-card" id="error-card" hidden role="alert"><span>❀</span><h2>Khu vườn cần thêm một chút thời gian</h2><p id="error-message"></p><button class="primary" id="retry">Thử mở lại ↗</button></div>
+    <div class="toast" id="toast" role="status" hidden></div>
+  </main>
+  <script src="/assets/vuon-hoa/vendor/three-global.js"></script>
+</body>
+</html>

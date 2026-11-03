@@ -1,0 +1,17 @@
+{
+  "name": "dlove-flower-garden-clone",
+  "version": "1.0.0",
+  "description": "Bản clone đầy đủ của Vườn hoa DLove (3D Three.js Interactive Flower Garden) cho websiteId ac8fb44238066def",
+  "scripts": {
+    "start": "python server.py 8080",
+    "serve": "npx serve ."
+  },
+  "keywords": [
+    "dlove",
+    "flower-garden",
+    "threejs",
+    "interactive-garden"
+  ],
+  "author": "",
+  "license": "ISC"
+}
