@@ -4,10 +4,10 @@
     "websiteId": "ac8fb44238066def",
     "productType": "silkgarden",
     "configVersion": 1,
-    "title": "Vườn hoa Love",
+    "title": "Khu vườn hoa",
     "intro": {
-      "headline": "Bxaa đến rồi!",
-      "subtitle": "Có một khu vườn nhỏ,\nđang đợi bxaa ghé thăm.",
+      "headline": "Chào mừng eiu đến khu vườn!",
+      "subtitle": "Có một khu vườn nhỏ,\nđang đợi eiu ghé thăm.",
       "buttonLabel": "Cùng nhau khám phá nhé",
       "occasion": ""
     },
@@ -15,72 +15,80 @@
       {
         "id": "3f76a943-ca21-4374-b494-ae2b23143664",
         "name": "💗",
-        "image": "/anh/1.png",
-        "original": "/anh/1.png",
-        "wish": "Chúc bxaa một ngày mới ngập tràn năng lượng tích cực và luôn nở nụ cười thật tươi nhé!"
+        "image": "/"C:\anh01.jpg",
+        "original": ""C:\anh01.jpg"",
+        "wish": "Chúc eiu của anh một ngày mới ngập tràn năng lượng tích cực và luôn cười thật tươi nhé!"
       },
       {
         "id": "289cfd44-c4bd-4351-82bd-b43462be795c",
         "name": "💗",
-        "image": "/anh/2.png",
-        "original": "/anh/2.png",
-        "wish": "Hôm nay bxaa nhớ ăn uống đầy đủ, đừng bỏ bữa và giữ gìn sức khỏe thật tốt nha. Yêu bxaa!"
+        "image": ""C:\anh2.jpg"",
+        "original": ""C:\anh2.jpg"",
+        "wish": "Hôm nay eiu nhớ ăn uống đầy đủ, đừng bỏ bữa đẻ không bị đau dạ dày nha. Yêu bé!"
       },
       {
         "id": "c5decd72-1521-4458-895c-8ccfefd80a54",
         "name": "💗",
-        "image": "/anh/3.png",
-        "original": "/anh/3.png",
-        "wish": "Mong một ngày bình yên, học tập thật vui vẻ và gặp toàn những điều may mắn đến với bxaa."
+        "image": ""C:\anh3.jpg"",
+        "original": ""C:\anh3.jpg"",
+        "wish": "Mong một ngày bình yên, thật vui vẻ và gặp toàn những điều may mắn đến với eiu."
       },
       {
         "id": "63089763-4418-42fb-b43f-db03a539f5cb",
         "name": "💗",
-        "image": "/anh/4.png",
-        "original": "/anh/4.png",
-        "wish": "Mỗi ngày trôi qua, oxaa chỉ mong thấy bxaa luôn vui vẻ, an yên và không phải lo nghĩ nhiều."
+        "image": ""C:\anh4.jpg"",
+        "original": ""C:\anh4.jpg"",
+        "wish": "Mỗi ngày trôi qua, aiu chỉ mong thấy eiu luôn vui vẻ, an yên và không phải lo nghĩ nhiều."
       },
       {
         "id": "d85385cc-fab9-4cc5-95a5-7d482b44a9a2",
         "name": "💗",
-        "image": "/anh/5.png",
-        "original": "/anh/5.png",
-        "wish": "Cảm ơn bxaa vì luôn là động lực to lớn và là điều ngọt ngào nhất trong cuộc sống của oxaa."
+        "image": ""C:\anh5.jpg"",
+        "original": ""C:\anh5.jpg"",
+        "wish": "Cảm ơn eiu vì luôn là động lực to lớn và là điều tuyệt vời nhất trong cuộc sống của aiu."
       },
       {
         "id": "95735ce6-259d-495b-b4fb-b9ee2c6f9759",
         "name": "💗",
-        "image": "/anh/6.png",
-        "original": "/anh/6.png",
-        "wish": "Nếu hôm nay có mệt mỏi hay áp lực, nhớ là luôn có oxaa ở đây lắng nghe và vỗ về bxaa nhé."
+        "image": ""C:\anh6.jpg"",
+        "original": ""C:\anh6.jpg"",
+        "wish": "Nếu hôm nay có mệt mỏi hay áp lực, nhớ là luôn có aiu ở đây lắng nghe và vỗ về eiu nhé."
       },
       {
         "id": "53141b96-97fe-494c-9dec-3a7d60e77b04",
         "name": "💗",
-        "image": "/anh/7.png",
-        "original": "/anh/7.png",
-        "wish": "Chúc bxaa luôn yêu đời, tự tin vào chính mình và tận hưởng từng khoảnh khắc nhỏ bé mỗi ngày."
+        "image": ""C:\anh7.jpg"",
+        "original": ""C:\anh7.jpg"",
+        "wish": "Chúc eiu luôn yêu đời, tự tin vào chính mình và tận hưởng từng khoảnh khắc nhỏ bé mỗi ngày."
       },
       {
         "id": "e6d77cda-ca01-4964-a656-7eec399b77c4",
         "name": "💗",
-        "image": "/anh/8.png",
-        "original": "/anh/8.png",
-        "wish": "Dù ngày mưa hay ngày nắng, chỉ cần nhìn thấy bxaa cười là cả ngày của oxaa đều trở nên ấm áp."
+        "image": ""C:\anh8.jpg"",
+        "original": ""C:\anh8.jpg"",
+        "wish": "Dù ngày mưa hay ngày nắng, chỉ cần nhìn thấy eiu cười là một ngày của aiu đều trở nên tuyệt vời."
       },
       {
         "id": "9b4753e8-3105-4f2c-9df3-17f117c08282",
         "name": "💗",
-        "image": "/anh/9.png",
-        "original": "/anh/9.png",
-        "wish": "Uống đủ nước, nghỉ ngơi điều độ và nhớ rằng luôn có một người đang thương bxaa rất nhiều."
+        "image": ""C:\anh9.jpg"",
+        "original": ""C:\anh9.jpg"",
+        "wish": "Uống đủ nước, nghỉ ngơi điều độ và nhớ rằng luôn có một người đang thương eiu rất nhiều."
       },
       {
         "id": "2a68836e-57ba-4877-b10e-09c8bd65c865",
         "name": "💗",
-        "image": "/anh/10.png",
-        "original": "/anh/10.png",
-        "wish": "Chúc bxaa buổi tối thật ấm áp, ngủ một giấc thật ngon và mơ những giấc mơ thật đẹp nhé!"
+        "image": ""C:\anh10.jpg"",
+        "original": ""C:\anh10.jpg"
+        
+        
+        
+        
+        
+        
+        
+        ",
+        "wish": "Chúc eiu buổi tối thật ấm áp, ngủ một giấc thật ngon và mơ những giấc mơ thật đẹp nhé!"
       }
     ],
     "enableBouquet": true,
@@ -128,13 +136,14 @@
     },
     "enableLetter": false,
     "letter": {
-      "title": "Gửi tới bxaa xinh đẹp của oxaa,",
+      "title": "Gửi tới eiu của anh <3
+      ",
       "opening": "",
-      "text": "Chúc các bxaa có một ngày 20/10 thật nhiều niềm vui, nhận được thật nhiều hoa, quà và những lời chúc ngọt ngào. Mong rằng mỗi ngày đến trường của các bxaa đều là một ngày vui. Và chặng đường sắp tới của chúng ta sẽ có thật nhiều kỉ niệm đẹp cùng nhau",
+      "text": "Anh không biết phải nói những lời hoa mỹ thế nào, chỉ mong em luôn vui vẻ, bình an và gặp thật nhiều điều tốt đẹp trong cuộc sống. Mong rằng những ngày tháng phía trước của em sẽ luôn ngập tràn tiếng cười, những điều em mong muốn đều sẽ trở thành hiện thực. Nếu có những ngày mệt mỏi hay không vui, anh mong em nhớ rằng vẫn luôn có anh ở đây, sẵn sàng lắng nghe, quan tâm và yêu thương em. Cảm ơn em vì đã xuất hiện và trở thành một phần đặc biệt trong cuộc sống của anh. Anh thương em nhiều! ❤️",
       "signoff": "",
       "sender": "",
       "date": "",
-      "envelopeLine": "Một lá thư dành riêng cho bxaa",
+      "envelopeLine": "Một lá thư dành riêng cho eiu",
       "buttonLabel": "Lá thư"
     },
     "bgMusic": "/uploads/1000anhmat.mp3",
