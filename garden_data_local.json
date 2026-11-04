@@ -137,7 +137,7 @@
       "envelopeLine": "Một lá thư dành riêng cho eiu",
       "buttonLabel": "Lá thư"
     },
-    "bgMusic": "/uploads/1000anhmat.mp3",
+    "bgMusic": "https://github.com/dendo3353-eng/testhoa/blob/main/L%E1%BB%A1%20Th%C6%B0%C6%A1ng%20Nhau%20(B%C3%B2%20S%E1%BB%AFa%20Bay%20Original%20Soundtrack).mp3",
     "expiresAt": "2027-10-15T20:32:21.781Z",
     "createdAt": "2026-10-15T20:32:20.998Z",
     "showWatermark": false
