@@ -1,184 +1,96 @@
 <!doctype html>
 <html lang="vi">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#eec9df">
-  <meta name="description" content="Vườn hoa Love — mỗi khoảnh khắc, một điều đáng nhớ.">
-  <title>Vườn hoa Love</title>
-  <!-- Metadata tĩnh dùng cho cả /vuon.html và các link /vuon/<slug>. -->
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Love">
-  <meta property="og:title" content="Vườn hoa Love">
-  <meta property="og:description" content="Vườn hoa Love — mỗi khoảnh khắc, một điều đáng nhớ.">
-  <meta property="og:image" content="https://i.dlove.vn/assets/ui/dlove-gift-logo.png">
-  <meta property="og:image:secure_url" content="https://i.dlove.vn/assets/ui/dlove-gift-logo.png">
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="1254">
-  <meta property="og:image:height" content="1254">
-  <meta property="og:image:alt" content="Biểu tượng hộp quà hồng Love">
-  <meta property="og:locale" content="vi_VN">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Vườn hoa Love">
-  <meta name="twitter:description" content="Vườn hoa Love — mỗi khoảnh khắc, một điều đáng nhớ.">
-  <meta name="twitter:image" content="https://i.dlove.vn/assets/ui/dlove-gift-logo.png">
-  <meta name="twitter:image:alt" content="Biểu tượng hộp quà hồng Love">
-  <link rel="stylesheet" href="/assets/vuon-hoa/fonts/fonts.css">
-  <link rel="icon" href="/assets/ui/dlove-gift-logo.png">
-  <script src="./detect-devtools.js"></script>
-  <script type="module" crossorigin src="./assets/garden-BtN3YziN.js"></script>
-  <link rel="modulepreload" crossorigin href="/assets/codeProtection-B6aeKZvA.js">
-  <link rel="modulepreload" crossorigin href="/assets/templateConst-Bf8fV3By.js">
-  <link rel="modulepreload" crossorigin href="/assets/data-B7vB9Mqk.js">
-  <link rel="stylesheet" crossorigin href="/assets/garden-X5d9e75R.css">
-  <link rel="stylesheet" crossorigin href="/assets/dloveLogo-D8kZ4Lma.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f8e7ee">
+<meta name="description" content="Khu vườn hoa nhỏ với những bức ảnh và lời chúc dịu dàng.">
+<title>Khu vườn hoa</title>
+<style>
+:root{--ink:#593d4a;--rose:#b85f83;--cream:#fffaf8;--pink:#f8e7ee;--gold:#d5ad75}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:Georgia,"Times New Roman",serif;background:linear-gradient(150deg,#fffaf8,#f8e7ee 55%,#f5e0e7);min-height:100vh}
+button{font:inherit;cursor:pointer}.hero{min-height:100svh;position:relative;display:grid;place-items:center;overflow:hidden;padding:30px 18px;background:radial-gradient(ellipse at 50% 90%,#f4d8e3 0,transparent 48%),linear-gradient(160deg,#fffaf8,#f5e1e9)}
+.hero:before,.hero:after{content:"";position:absolute;width:340px;height:340px;border:1px solid #d8afc0;border-radius:50%;opacity:.45}.hero:before{top:-210px;left:-100px}.hero:after{right:-180px;bottom:-200px}
+.glow{position:absolute;inset:0;background:radial-gradient(circle at 20% 20%,#fff 0 2px,transparent 3px),radial-gradient(circle at 75% 35%,#fff 0 2px,transparent 3px),radial-gradient(circle at 65% 75%,#fff 0 2px,transparent 3px);background-size:180px 180px;opacity:.7;animation:twinkle 5s ease-in-out infinite alternate}
+@keyframes twinkle{to{opacity:.25;transform:translateY(-8px)}}
+.hero-card{position:relative;z-index:1;text-align:center;max-width:680px;padding:clamp(28px,6vw,64px);background:#fffaf8d9;border:1px solid #e8cbd7;border-radius:28px;box-shadow:0 24px 80px #9b61751b;backdrop-filter:blur(8px)}
+.eyebrow{letter-spacing:.25em;text-transform:uppercase;font:11px Arial,sans-serif;color:#a36c83}.flower-mark{font-size:48px;color:#c47798;margin:0 0 14px}.hero h1{font-size:clamp(34px,7vw,62px);font-weight:400;margin:0 0 16px;line-height:1.08}.hero p{font-size:clamp(16px,2.5vw,20px);line-height:1.7;white-space:pre-line;color:#806574;margin:0 auto 28px}
+.primary,.soft{border:0;border-radius:999px;padding:14px 25px;background:var(--rose);color:white;box-shadow:0 8px 22px #b85f8338;transition:.2s}.primary:hover,.soft:hover{transform:translateY(-2px);filter:brightness(1.04)}.music-toggle{position:fixed;z-index:5;right:18px;top:18px;border:1px solid #e5c8d4;background:#fffaf0e8;color:#8d536e;border-radius:999px;padding:11px 15px;box-shadow:0 6px 20px #593d4a16}
+main{max-width:1120px;margin:auto;padding:72px 20px 90px}.section-head{text-align:center;margin-bottom:34px}.section-head .eyebrow{margin-bottom:10px}.section-head h2{font-size:clamp(30px,5vw,44px);font-weight:400;margin:0}.section-head p{color:#927482;line-height:1.6}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:20px}.photo-card{border:1px solid #ead2dc;background:#fffaf8;padding:10px 10px 18px;border-radius:18px;box-shadow:0 12px 30px #76465a12;transition:transform .25s,box-shadow .25s;cursor:pointer}.photo-card:hover{transform:translateY(-5px) rotate(-.4deg);box-shadow:0 18px 34px #76465a20}.photo-card img{display:block;width:100%;height:245px;object-fit:cover;border-radius:12px;background:#f0dfe5}.photo-card p{text-align:center;margin:13px 4px 0;color:#806574;font-size:15px;line-height:1.5}
+.bouquet-wrap{margin:70px auto 0;text-align:center;padding:34px 20px;background:#fffaf8b8;border:1px solid #ead2dc;border-radius:24px}.bouquet{font-size:clamp(35px,7vw,65px);letter-spacing:8px;line-height:1.6;filter:drop-shadow(0 7px 8px #b85f8330)}.bouquet-wrap h2{font-weight:400;font-size:30px;margin:8px 0}.bouquet-wrap p{color:#927482;line-height:1.6;max-width:620px;margin:0 auto}
+footer{text-align:center;padding:25px;color:#9b7d8b;font:12px Arial,sans-serif;letter-spacing:.08em}
+.modal{position:fixed;inset:0;z-index:10;background:#24151dcc;display:none;align-items:center;justify-content:center;padding:20px}.modal.open{display:flex}.modal-inner{max-width:min(900px,95vw);max-height:92vh;position:relative;text-align:center;color:#fff}.modal img{max-width:100%;max-height:76vh;object-fit:contain;border-radius:12px;box-shadow:0 20px 60px #0008}.modal p{line-height:1.5}.close,.nav{position:absolute;border:0;border-radius:50%;width:42px;height:42px;background:#fff;color:#70475a;font:24px Arial;box-shadow:0 5px 18px #0003}.close{right:-12px;top:-12px}.nav{top:45%;}.prev{left:-18px}.next{right:-18px}
+@media(max-width:560px){main{padding:55px 14px}.photo-card img{height:230px}.music-toggle{right:10px;top:10px}.hero-card{padding:32px 22px}.bouquet-wrap{margin-top:48px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
 </head>
 <body>
-  <main id="garden" aria-label="Khu vườn ảnh tương tác 360 độ">
-    <canvas id="scene" tabindex="0" aria-label="Vuốt trái phải để nhìn quanh. Dùng phím mũi tên để chọn ảnh, Enter để ngắm gần."></canvas>
-    <div class="vignette" aria-hidden="true"></div>
-    <header class="topbar" id="topbar">
-      <a class="wordmark" href="#" id="home" aria-label="Về giữa khu vườn"><img class="brand-logo" data-asset="assets/brand/dlove-mark.png" width="474" height="512" alt="Biểu tượng Dlove" fetchpriority="high" draggable="false"></a>
-      <div class="top-actions">
-        <button class="photo-retry" id="retry-photos" type="button" hidden>Tải lại ảnh</button>
-        <button class="icon-button" id="sound" aria-label="Bật âm thanh" title="Bật âm thanh" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4zM17 9l5 6m0-6-5 6"/></svg></button>
-      </div>
-    </header>
-
-    <section class="welcome" id="welcome" aria-labelledby="welcome-title">
-      <div class="welcome-scene" aria-hidden="true">
-        <picture class="welcome-picture">
-          <source media="(min-width: 900px), (min-width: 700px) and (orientation: landscape)" data-asset="assets/welcome/garden-gate-desktop.jpg" width="1672" height="941">
-          <img class="welcome-landscape" data-asset="assets/welcome/garden-gate.jpg" alt="" width="887" height="1774" fetchpriority="high" draggable="false">
-        </picture>
-        <div class="welcome-fireflies"><i></i><i></i><i></i><i></i></div>
-      </div>
-      <div class="welcome-brand"><img data-asset="assets/brand/dlove-mark.png" width="474" height="512" alt="Logo Dlove" fetchpriority="high" draggable="false"></div>
-      <div class="welcome-content">
-        <div class="welcome-copy">
-          <h1 id="welcome-title">Chào mừng eiu đến khu vườn!</h1>
-          <p class="intro-line">Có một khu vườn nhỏ,<br>đang đợi eiu ghé thăm.</p>
-        </div>
-        <div class="welcome-actions">
-          <button class="primary" id="enter" disabled><span id="enter-label">Đang mở những cánh hoa…</span><svg viewBox="0 0 28 28" aria-hidden="true"><path d="M4 14h20M17 7l7 7-7 7"/></svg></button>
-          <div class="load-track" id="load-track"><i id="load-bar"></i></div>
-          <p class="load-caption" id="load-caption" role="status">aiu đang chuẩn bị khu vườn</p>
-        </div>
-      </div>
-      <div class="welcome-guide">
-        <img data-asset="assets/welcome/dlovy-guide.png" width="1254" height="1254" alt="aiu nghiêng mình, đưa tay và nắm tay eiu vào vườn hoa" fetchpriority="high" draggable="false">
-      </div>
-      <img class="welcome-foreground" data-asset="assets/welcome/garden-foreground-desktop.png" width="2172" height="724" alt="" aria-hidden="true" loading="lazy" draggable="false">
-    </section>
-
-    <section class="explore-ui" id="explore-ui" hidden>
-      <nav class="journey-controls" hidden aria-label="Điều hướng khu vườn">
-        <button class="direction left" id="turn-left" aria-label="Nhìn sang trái">‹</button>
-        <span class="journey-position" id="journey-position" hidden aria-label="Vị trí trong hành trình">01 / 01</span>
-        <button class="direction right" id="turn-right" aria-label="Nhìn sang phải">›</button>
-        <div class="journey-track" id="journey-track" hidden aria-hidden="true"><i></i></div>
-      </nav>
-      <div class="scene-label" id="scene-label" aria-hidden="true"><i class="name-star name-star-left" aria-hidden="true"></i><i class="name-star name-star-top" aria-hidden="true"></i><i class="name-star name-star-right" aria-hidden="true"></i><span id="scene-label-text"></span><small>Chạm để xem ↗</small></div>
-      <button class="memory-launch" id="open-memory" hidden aria-haspopup="dialog" aria-controls="class-memory" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 3v18M17 3v18M3 8h4m10 0h4M3 16h4m10 0h4M7 12h10"/></svg><span>Cuộn phim ký ức</span></button>
-      <button class="letter-launch" id="open-letter" hidden aria-haspopup="dialog" aria-controls="class-letter" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/><path class="envelope-heart" d="M10 11c-2-3-4 0 2 4 6-4 4-7 2-4l-2 2z"/></svg><span>Lá thư</span><i aria-hidden="true">✧</i></button>
-      <div class="bottom-bar" id="bottom-bar" hidden>
-        <span class="swipe-hint"><svg viewBox="0 0 48 16" aria-hidden="true"><path d="M2 8h44M8 2 2 8l6 6M40 2l6 6-6 6"/></svg> Vuốt để dạo quanh <span class="hint-separator">·</span> Chạm vào một đóa hoa</span>
-        <div class="compass" id="compass" aria-label="Vị trí trong khu vườn"><span id="compass-name">Khởi đầu dịu dàng</span><div id="compass-dots"></div><span class="compass-degree" id="compass-degree">360°</span></div>
-      </div>
-    </section>
-
-    <section class="focus-ui" id="focus-ui" hidden aria-labelledby="focus-name">
-      <button class="back-button" id="back"><span aria-hidden="true">←</span> Về khu vườn</button>
-      <div class="focus-copy">
-        <p class="eyebrow" id="focus-number" hidden></p>
-        <h2 id="focus-name"></h2>
-        <p id="focus-wish"></p>
-        <button class="bouquet-launch" id="open-bouquet" aria-label="Mở bó hoa dành riêng cho eiu" aria-haspopup="dialog" aria-controls="person-bouquet" aria-expanded="false">
-          <span class="bouquet-launch-art" aria-hidden="true"><img data-asset="assets/bouquet/letter-bouquet-sticker.png" width="322" height="384" alt="" draggable="false"></span>
-          <span class="bouquet-launch-label">Bó hoa dành riêng cho eiu</span>
-          <span class="bouquet-launch-arrow" aria-hidden="true">↗</span>
-        </button>
-      </div>
-      <div class="focus-controls" hidden><button id="previous" class="icon-button" aria-label="Ảnh trước">←</button><span id="focus-index"></span><button id="next" class="icon-button" aria-label="Ảnh tiếp theo">→</button><span class="control-divider"></span><button id="zoom-out" class="icon-button" aria-label="Thu nhỏ">−</button><button id="zoom-in" class="icon-button" aria-label="Phóng to">+</button></div>
-    </section>
-
-    <section class="class-letter" id="class-letter" hidden role="dialog" aria-modal="true" aria-labelledby="letter-title" data-phase="sealed">
-      <div class="letter-backdrop" id="letter-backdrop" aria-hidden="true"></div>
-      <div class="letter-topline"><button class="letter-close" id="close-letter" aria-label="Đóng thư và trở lại khu vườn">×</button></div>
-      <div class="letter-scroll" id="letter-scroll">
-        <div class="letter-stationery" id="letter-stationery">
-          <div class="envelope-back" aria-hidden="true"></div>
-          <div class="envelope-flap" aria-hidden="true"><span>gửi những điều dịu dàng</span></div>
-          <article class="letter-paper" id="letter-paper" tabindex="0" aria-label="Nội dung lá thư">
-            <img loading="lazy" class="letter-art" id="letter-art" data-asset="assets/letter/letter-blank-v3.webp" width="1122" height="1402" alt="" aria-hidden="true" draggable="false">
-            <div class="letter-copy" id="letter-copy" tabindex="0" aria-label="Đọc nội dung lá thư">
-              <h2 id="letter-title"></h2>
-              <p class="letter-opening" id="letter-opening"></p>
-              <div class="letter-paragraphs" id="letter-paragraphs"></div>
-              <span class="letter-heart letter-divider" aria-hidden="true">✧ ♡ ✧</span>
-              <span class="letter-date" id="letter-date"></span>
-            </div>
-            <span class="letter-read-hint" id="letter-read-hint" hidden aria-hidden="true">Cuộn để đọc tiếp ↓</span>
-          </article>
-          <img loading="lazy" class="envelope-front" id="envelope-front" data-asset="assets/letter/envelope-front.webp" alt="Phong bì hồng trang trí nơ và hoa">
-          <div class="envelope-seal"><img loading="lazy" data-asset="assets/letter/dlove-wax-seal.png" width="1254" height="1254" alt="Dấu sáp hồng dập logo Dlove" draggable="false"></div>
-          <div class="letter-butterfly butterfly-one" aria-hidden="true"><img loading="lazy" data-asset="assets/letter/butterfly-letter-v3.webp" alt=""></div>
-          <div class="letter-sparkles" aria-hidden="true"><i>✧</i><i>✧</i><i>✦</i><i>✧</i><i>✦</i></div>
-        </div>
-        <p class="letter-bottom-note" id="letter-status" aria-live="polite">Một lá thư đang chờ eiu…</p>
-      </div>
-    </section>
-    <section class="memory-modal" id="class-memory" hidden role="dialog" aria-modal="true" aria-labelledby="memory-title">
-      <img loading="lazy" class="memory-panorama" data-asset="assets/decor/dream-panorama.webp" alt="" aria-hidden="true">
-      <div class="memory-wash" aria-hidden="true"></div>
-      <header class="memory-head">
-        <button class="memory-close" id="close-memory" aria-label="Đóng cuộn phim và về khu vườn">←</button>
-        <span class="memory-brand">Quang</span>
-        <button class="memory-play" id="memory-play" aria-label="Tạm dừng cuộn phim" aria-pressed="true">Ⅱ</button>
-        <h2 id="memory-title">Cuộn phim kỷ niệm</h2>
-      </header>
-      <div class="memory-stage" id="memory-stage">
-        <div class="memory-viewport" id="memory-viewport" tabindex="0" role="region" aria-label="Ảnh trong cuộn phim" aria-describedby="memory-hint">
-          <div class="memory-film" id="memory-film"></div>
-        </div>
-        <canvas class="memory-film-canvas" id="memory-film-canvas" aria-hidden="true"></canvas>
-      </div>
-      <img loading="lazy" class="memory-ribbon" data-asset="assets/decor/silk-ribbon.webp" alt="" aria-hidden="true">
-      <img loading="lazy" class="memory-flowers" data-asset="assets/decor/flowers-front.webp" alt="" aria-hidden="true">
-      <p class="memory-sr-only" id="memory-hint">Vuốt hoặc dùng phím mũi tên để cuộn phim. Nút ở góc trên bên phải bật hoặc dừng tự trôi.</p>
-      <output class="memory-sr-only" id="memory-position" aria-label="Vị trí khung phim" aria-live="off">01 / 01</output>
-    </section>
-    <section class="bouquet-modal" id="person-bouquet" hidden role="dialog" aria-modal="true" aria-labelledby="bouquet-name" data-phase="closed">
-      <div class="bouquet-atmosphere" aria-hidden="true">
-        <div class="bouquet-haze"></div>
-        <div class="bouquet-bokeh"></div>
-        <img loading="lazy" class="bouquet-garden-edge" data-asset="assets/welcome/garden-foreground-desktop.png" width="2172" height="724" alt="" draggable="false">
-        <div class="bouquet-petals">
-          <i style="--x:4%;--size:15px;--sway:34px;--turn:18deg;--duration:19s;--delay:-4s"></i>
-          <i style="--x:12%;--size:10px;--sway:-23px;--turn:65deg;--duration:24s;--delay:-17s"></i>
-          <i style="--x:23%;--size:17px;--sway:40px;--turn:-24deg;--duration:22s;--delay:-10s"></i>
-          <i style="--x:8%;--size:12px;--sway:27px;--turn:110deg;--duration:27s;--delay:-22s"></i>
-          <i style="--x:31%;--size:9px;--sway:-32px;--turn:40deg;--duration:26s;--delay:-6s"></i>
-          <i style="--x:77%;--size:14px;--sway:-35px;--turn:80deg;--duration:23s;--delay:-15s"></i>
-          <i style="--x:88%;--size:18px;--sway:26px;--turn:-32deg;--duration:21s;--delay:-7s"></i>
-          <i style="--x:96%;--size:11px;--sway:-30px;--turn:15deg;--duration:28s;--delay:-23s"></i>
-          <i style="--x:83%;--size:9px;--sway:38px;--turn:95deg;--duration:25s;--delay:-2s"></i>
-          <i style="--x:68%;--size:12px;--sway:22px;--turn:-60deg;--duration:30s;--delay:-19s"></i>
-        </div>
-      </div>
-      <header class="bouquet-head">
-        <button class="bouquet-close" id="close-bouquet" aria-label="Đóng bó hoa và về ảnh đang ngắm">←</button>
-        <h2 id="bouquet-name"></h2>
-      </header>
-      <div class="bouquet-display"><div class="bouquet-stage" id="bouquet-stage" role="img" aria-label="Bó hoa dành riêng cho bxaa"></div></div>
-      <footer class="bouquet-footer">
-        <p class="bouquet-wish" id="bouquet-wish" hidden></p>
-        <p class="bouquet-status" id="bouquet-status" role="status"></p>
-      </footer>
-    </section>
-    <div class="error-card" id="error-card" hidden role="alert"><span>❀</span><h2>Khu vườn cần thêm một chút thời gian</h2><p id="error-message"></p><button class="primary" id="retry">Thử mở lại ↗</button></div>
-    <div class="toast" id="toast" role="status" hidden></div>
-  </main>
-  <script src="./assets/vuon-hoa/vendor/three-global.js"></script>
+<button class="music-toggle" id="musicBtn" type="button" aria-pressed="false">♫ Bật nhạc</button>
+<audio id="bgMusic" preload="none" loop></audio>
+<section class="hero" id="home">
+ <div class="glow" aria-hidden="true"></div>
+ <div class="hero-card">
+  <div class="flower-mark" aria-hidden="true">✿</div>
+  <div class="eyebrow">a little garden for you</div>
+  <h1 id="headline">Chào mừng đến khu vườn!</h1>
+  <p id="subtitle">Có một khu vườn nhỏ,\nđang đợi bạn ghé thăm.</p>
+  <button class="primary" id="enterBtn">Cùng nhau khám phá nhé　✧</button>
+ </div>
+</section>
+<main id="garden">
+ <div class="section-head">
+  <div class="eyebrow">little moments · lovely memories</div>
+  <h2>Những đóa hoa dành riêng cho bạn</h2>
+  <p>Chạm vào từng bức ảnh để xem rõ hơn và đọc lời chúc.</p>
+ </div>
+ <div class="gallery" id="gallery"></div>
+ <section class="bouquet-wrap">
+  <div class="bouquet" aria-hidden="true">🌷 🌸 🌼<br>💐 🌹 🌷</div>
+  <h2>Một bó hoa nhỏ</h2>
+  <p>Mong bạn luôn có thật nhiều niềm vui, bình yên và những ngày dịu dàng như khu vườn này.</p>
+ </section>
+</main>
+<footer>ĐƯỢC TẠO BẰNG NHỮNG ĐIỀU DỊU DÀNG ✧</footer>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Xem ảnh">
+ <div class="modal-inner">
+  <button class="close" id="closeModal" aria-label="Đóng">×</button>
+  <button class="nav prev" id="prevPhoto" aria-label="Ảnh trước">‹</button>
+  <img id="modalImg" alt="">
+  <p id="modalWish"></p>
+  <button class="nav next" id="nextPhoto" aria-label="Ảnh tiếp theo">›</button>
+ </div>
+</div>
+<script>
+(async()=>{
+ const $=id=>document.getElementById(id);
+ let config={data:{title:"Khu vườn hoa",intro:{headline:"Chào mừng đến khu vườn!",subtitle:"Có một khu vườn nhỏ,\\nđang đợi bạn ghé thăm."},people:[]}};
+ try{const r=await fetch("./garden_data.json");if(r.ok)config=await r.json()}catch(e){console.warn("Không đọc được garden_data.json, dùng nội dung mặc định.",e)}
+ const d=config.data||config, people=Array.isArray(d.people)?d.people:[];
+ document.title=d.title||"Khu vườn hoa";
+ $("headline").textContent=d.intro?.headline||"Chào mừng đến khu vườn!";
+ $("subtitle").textContent=d.intro?.subtitle||"Có một khu vườn nhỏ,\\nđang đợi bạn ghé thăm.";
+ $("enterBtn").textContent=(d.intro?.buttonLabel||"Cùng nhau khám phá nhé")+"　✧";
+ const gallery=$("gallery");
+ people.forEach((p,i)=>{
+  const card=document.createElement("article");card.className="photo-card";card.tabIndex=0;
+  const img=document.createElement("img");img.src=p.image||`./anh${i+1}.jpg`;img.alt=p.name||`Kỷ niệm ${i+1}`;img.loading="lazy";
+  const caption=document.createElement("p");caption.textContent=p.wish||p.name||`Một khoảnh khắc đáng nhớ`;
+  card.append(img,caption);card.addEventListener("click",()=>show(i));card.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();show(i)}});
+  gallery.append(card);
+ });
+ let current=0;
+ function show(i){if(!people.length)return;current=(i+people.length)%people.length;const p=people[current];$("modalImg").src=p.original||p.image||`./anh${current+1}.jpg`;$("modalImg").alt=p.name||"Ảnh kỷ niệm";$("modalWish").textContent=p.wish||"";$("modal").classList.add("open")}
+ function close(){ $("modal").classList.remove("open") }
+ $("closeModal").onclick=close;$("modal").addEventListener("click",e=>{if(e.target===$("modal"))close()});
+ $("prevPhoto").onclick=()=>show(current-1);$("nextPhoto").onclick=()=>show(current+1);
+ document.addEventListener("keydown",e=>{if(!$("modal").classList.contains("open"))return;if(e.key==="Escape")close();if(e.key==="ArrowLeft")show(current-1);if(e.key==="ArrowRight")show(current+1)});
+ $("enterBtn").onclick=()=>$("garden").scrollIntoView({behavior:"smooth"});
+ const audio=$("bgMusic");audio.src=d.bgMusic||"./music.mp3";
+ $("musicBtn").onclick=async()=>{try{if(audio.paused){await audio.play();$("musicBtn").textContent="♫ Tắt nhạc";$("musicBtn").setAttribute("aria-pressed","true")}else{audio.pause();$("musicBtn").textContent="♫ Bật nhạc";$("musicBtn").setAttribute("aria-pressed","false")}}catch(e){$("musicBtn").textContent="Không phát được nhạc";console.warn(e)}};
+ audio.addEventListener("pause",()=>{if(audio.ended)return;$("musicBtn").textContent="♫ Bật nhạc";$("musicBtn").setAttribute("aria-pressed","false")});
+ audio.addEventListener("play",()=>{$("musicBtn").textContent="♫ Tắt nhạc";$("musicBtn").setAttribute("aria-pressed","true")});
+})();
+</script>
 </body>
 </html>
