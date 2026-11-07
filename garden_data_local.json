@@ -1,6 +1,4 @@
 {
-  "success": true,
-  "data": {
     "websiteId": "ac8fb44238066def",
     "productType": "silkgarden",
     "configVersion": 1,
@@ -142,4 +140,4 @@
     "createdAt": "2026-10-15T20:32:20.998Z",
     "showWatermark": false
   }
-}
+
