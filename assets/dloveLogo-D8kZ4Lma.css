@@ -1,0 +1,1 @@
+.dlove-logo{position:relative;display:block;flex:none;width:calc(var(--dlove-logo-height) * .9444);height:var(--dlove-logo-height);overflow:hidden;border-radius:4px}.dlove-logo>img{position:absolute;display:block;width:calc(var(--dlove-logo-height) * 1.8333);height:calc(var(--dlove-logo-height) * 1.8333);max-width:none;left:50%;top:50%;transform:translate(-50%,-50%)}
